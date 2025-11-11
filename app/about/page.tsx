@@ -60,27 +60,27 @@ export default function AboutPage() {
               </p>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-blue-50 rounded-lg p-6 border border-blue-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">🔒 Sigurnost i Licenciranje</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Sigurnost i Licenciranje</h3>
                   <p className="text-gray-600 text-sm">Provjeravamo licenciranje i regulatorni status u Hrvatskoj</p>
                 </div>
                 <div className="bg-green-50 rounded-lg p-6 border border-green-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">🎁 Bonusi</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Bonusi</h3>
                   <p className="text-gray-600 text-sm">Kvaliteta i vrijednost bonusa dobrodošlice i promocija</p>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-6 border border-purple-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">⚽ Sportska Ponuda</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Sportska Ponuda</h3>
                   <p className="text-gray-600 text-sm">Raznolikost sportskih tržišta i tipova oklada</p>
                 </div>
                 <div className="bg-orange-50 rounded-lg p-6 border border-orange-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">📊 Kvaliteta Kvota</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Kvaliteta Kvota</h3>
                   <p className="text-gray-600 text-sm">Konkurentnost kvota na popularne sportove</p>
                 </div>
                 <div className="bg-pink-50 rounded-lg p-6 border border-pink-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">💳 Metode Plaćanja</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Metode Plaćanja</h3>
                   <p className="text-gray-600 text-sm">Prilagođenost hrvatskim korisnicima</p>
                 </div>
                 <div className="bg-teal-50 rounded-lg p-6 border border-teal-100">
-                  <h3 className="font-bold text-lg text-gray-900 mb-2">💬 Korisnička Podrška</h3>
+                  <h3 className="font-bold text-lg text-gray-900 mb-2">Korisnička Podrška</h3>
                   <p className="text-gray-600 text-sm">Kvaliteta podrške na hrvatskom jeziku</p>
                 </div>
               </div>

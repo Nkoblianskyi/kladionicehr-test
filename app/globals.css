@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 13% 18%;
+
+    --card: 0 0% 97%;
+    --card-foreground: 0 100% 40%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 18%;
+
+    /* Solid colors without gradients */
+    --primary: 0 100% 40%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 211 100% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96%;
+    --muted-foreground: 220 13% 18%;
+
+    --accent: 0 100% 40%;
+    --accent-foreground: 0 0% 100%;
+    /* </CHANGE> */
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 100% 85%;
+    --input: 0 0% 97%;
+    --ring: 0 100% 40%;
+
+    --chart-1: 0 100% 40%;
+    --chart-2: 211 100% 50%;
+    --chart-3: 0 0% 100%;
+    --chart-4: 220 13% 46%;
+    --chart-5: 0 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar: 0 100% 40%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 211 100% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 100% 40%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 100% 85%;
+    --sidebar-ring: 0 100% 40%;
+  }
+
+  .dark {
+    --background: 220 13% 18%;
+    --foreground: 0 0% 95%;
+
+    --card: 220 13% 18%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 220 13% 18%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 100% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 211 100% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 0 100% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background-image: url("/images/croatia-background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+
+@layer utilities {
+  .section-transparent {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.5s ease-in-out;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.3s ease-in-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-in-out;
+  }
+
+  .animate-pulse {
+    animation: pulse 2s infinite;
+  }
+
+  /* Removed gradient-based animations */
+  .animate-glow {
+    animation: glow 2s infinite;
+  }
+  /* </CHANGE> */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Simplified glow animation without gradients */
+@keyframes glow {
+  0%,
+  100% {
+    box-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.6);
+  }
+}
+/* </CHANGE> */
